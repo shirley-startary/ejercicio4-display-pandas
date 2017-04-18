@@ -1,0 +1,16 @@
+body{
+  background-color:  #4d2202;
+}
+ul{
+  background-color:  #e51027;
+}
+li{
+  display: inline-block;
+  padding: 20px;
+  list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
