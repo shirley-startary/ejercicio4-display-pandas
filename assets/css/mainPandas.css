@@ -1,16 +1,19 @@
 body{
   background-color:  #4d2202;
 }
-ul{
+.colorRosa{
   background-color:  #e51027;
+}
+.letrasBlancas{
+  color: white;
 }
 li{
   display: inline-block;
   padding: 20px;
   list-style: none;
 }
+
 a{
-  color: white;
   text-decoration: none;
   padding: 10px;
 }
@@ -21,4 +24,8 @@ img{
 }
 div{
   display: inline-block;
+}
+
+.botones{
+  width: calc((100%-20%)/4);
 }
