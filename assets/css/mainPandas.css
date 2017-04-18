@@ -22,10 +22,15 @@ img{
   width: 200px;
   height: 200px;
 }
-div{
+div.imagenPanda{
   display: inline-block;
 }
 
 .botones{
   width: calc((100%-20%)/4);
+}
+div.textos{
+  width: 50%;
+  display: inline-block;
+  /*width: calc(100%-10%)/2;*/
 }
