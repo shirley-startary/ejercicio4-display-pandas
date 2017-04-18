@@ -27,10 +27,12 @@ div.imagenPanda{
 }
 
 .botones{
-  width: calc((100%-20%)/4);
+  width: calc((100%-5%)/3.5);
 }
-div.textos{
-  width: 50%;
+p{
   display: inline-block;
-  /*width: calc(100%-10%)/2;*/
+  width: calc((100%-5%)/2.5);
+  margin:15px;
+  color: yellow;
+
 }
