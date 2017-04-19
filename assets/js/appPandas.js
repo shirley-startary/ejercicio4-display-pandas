@@ -1,15 +1,14 @@
 var botonesCerrar=document.getElementsByClassName("cerrar");
 var botonRestaurar = document.getElementById("restaurar");
+var botonExtincion = document.getElementById("extincion");
 
 for (var i=0;i<botonesCerrar.length;i++){
   botonesCerrar[i].addEventListener("click", function(){cerrarImagenes(this)});
 }
 botonRestaurar.addEventListener("click",restaurarFotos);
+botonExtincion.addEventListener("click",ocultarTextoExtincion);
 
 function cerrarImagenes(esto){
-  // var imagenPanda=document.getElementsByClassName('imagenPanda');
-  // console.log(imagenPanda);
-
   //en esta funcion hacemos que se oculte cada imagen.
   esto.parentNode.style.display="none";
 }
@@ -21,5 +20,16 @@ function restaurarFotos(){
   console.log(longitud);
   for(var j=0;j<longitud;j++){
     restaurarDiv[j].style.display="inline-block";
+  }
+}
+
+function ocultarTextoExtincion(){
+  //esta funcion oculta y muestra el texto de extincion
+  var textoExtincion = document.getElementById("textoExtincion");
+  console.log(textoExtincion);
+  if(textoExtincion.style.visibility=="hidden"){
+    textoExtincion.style.visibility="visible"
+  }else {
+    textoExtincion.style.visibility="hidden"
   }
 }
